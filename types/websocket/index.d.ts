@@ -181,7 +181,7 @@ export interface IExtension {
 
 export declare class request extends events.EventEmitter {
     /** A reference to the original Node HTTP request object */
-    httpRequest: http.ClientRequest;
+    httpRequest: http.IncomingMessage;
     /** This will include the port number if a non-standard port is used */
     host: string;
     /** A string containing the path that was requested by the client */
